@@ -1,6 +1,6 @@
 ﻿#pragma strict
 
-private gameState : string = "enter"
+var gameState : String = "enter";
 
 //Start
 function Start () {
@@ -13,13 +13,13 @@ function Update () {
 }
 
 //FSM
-function FSM (gameState: string) {
-	switch {
-		case:"enter"
+function FSM (gameState: String) {
+	switch (gameState){
+		case "enter":
 				break;
-		case:"execute"
+		case "execute":
 				break;
-		case:"exit"
+		case "exit":
 				break;
 	}
 }
